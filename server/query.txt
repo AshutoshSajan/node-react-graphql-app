@@ -1,0 +1,70 @@
+# mutation{
+# 	updateBook(id: "5e7a521569e5cd56ef6c3f23", name: "The Long World", genre:"sci-fi", authorId: "5e7a504369e5cd56ef6c3f22"){
+#     name
+#     genre
+#     id
+#     author {
+#       id
+#       name
+#     }
+#   }
+# }
+
+# {
+# 	book(id: "5e7a521569e5cd56ef6c3f23"){
+#     name
+#     genre
+#     author {
+#       id
+#       name
+#     }
+#   }
+# }
+
+# {
+#	 book(id: "5e7a521569e5cd56ef6c3f23"){
+#     name
+#     genre
+#     author {
+#       name
+#       books{
+#         name
+#         genre
+#       }
+#     }
+#   }
+# }
+
+# {
+# 	books{
+#     name
+#     genre
+#     author {
+#       id
+#       name
+#     }
+#   }
+# }
+
+
+# {
+# 	author(id: "5e7a504369e5cd56ef6c3f22"){
+#     name
+#     age
+#     books {
+#       name,
+#       genre
+#     }
+#   }
+# }
+
+# {
+# 	authors{
+#     name
+#     age
+#     books {
+#       name,
+#       genre
+#     }
+#   }
+# }
